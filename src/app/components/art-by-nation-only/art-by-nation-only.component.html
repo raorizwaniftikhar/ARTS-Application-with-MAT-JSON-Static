@@ -1,0 +1,28 @@
+<div class="art-by-nation">
+  <h3 class="app-heading">
+    Click Button to see Nation Art
+  </h3>
+
+  <div class="nation-btns">
+    <div *ngFor="let nationArt of featuredNations">
+      <button mat-fab mat-raised-button color="primary" (click)="nation = nationArt.nation">
+        <h5>{{nationArt.nation}}</h5>
+      </button>
+    </div>
+  </div>
+
+  <div class="nation-content">
+    <div *ngFor="let art of artDetailsFiltered">
+      <mat-card class="nation-content-item">
+        <div *ngFor="let item of art | keyvalue">
+          <ng-container *ngIf="item.key != 'url'">
+            <li style="display: flex;">
+              <span class="item-key">{{item.key}}</span>
+              <span class="item-value">{{item.value}}</span>
+            </li>
+          </ng-container>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

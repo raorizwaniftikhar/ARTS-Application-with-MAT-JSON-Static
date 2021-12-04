@@ -1,0 +1,20 @@
+<div class="profile">
+  <h2>Profile</h2>
+  <div class="profile-header app-heading">
+    <div class="profile-header-image">
+      <img src="../../../assets/images/profile.png" alt="{{profile?.A4Name}}">
+    </div>
+    <div class="profile-header-info">
+
+      <mat-dialog-content>
+        <ul>
+          <li>My Name is {{profile?.A4Name}}</li>
+          <li>My Student ID is {{profile?.A4ID}}</li>
+          <li>My Login is {{profile?.A4Login}}</li>
+          <li>My Email is {{profile?.A4Email}}</li>
+        </ul>
+      </mat-dialog-content>
+    </div>
+  </div>
+  <button mat-button [mat-dialog-close]="true">OK</button>
+</div>

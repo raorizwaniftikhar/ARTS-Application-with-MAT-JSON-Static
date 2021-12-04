@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* CUSTOM CSS */
+
+.app-container {
+  padding: 10px;
+}
+
+.app-heading {
+  color: white;
+  text-align: center;
+  background-color: indianred;
+  font-style: italic;
+  margin: 0 !important;
+}
+
+.profile .profile-header .profile-header-image {
+  height: 100px;
+  display: flex;
+  padding: 0 0 10px 0;
+  justify-content: center;
+}
+
+.profile h2 {
+  margin-bottom: 5px;
+}
+
+table.app-table.center {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.app-table.center th,
+table.app-table.center td {
+  text-align: left;
+}
+
+table.app-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table.app-table tr:hover {
+  background-color: #D6EEEE;
+}
+
+.app-container .app-content .art-by-nation .nation-btns {
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.app-container .app-content .art-by-nation .nation-content {
+  display: block;
+  width: 85%;
+  margin: 5px auto;
+}
+
+.app-container .app-content .art-by-nation .nation-content .nation-content-item {
+  display: block;
+  margin: 10px auto;
+}
+
+.app-container .app-content .art-by-nation .nation-content .nation-content-item {
+  display: block;
+  margin: 10px auto;
+}
+
+.app-container .app-content .art-by-nation .nation-content .nation-content-item .item-key {
+  min-width: 200px;
+  display: inline-block;
+  text-align: left;
+}
+
+.app-container .app-content .art-by-nation .nation-content .nation-content-item .item-value {
+  display: inline-block;
+  text-align: left;
+  max-width: 300px;
+}
